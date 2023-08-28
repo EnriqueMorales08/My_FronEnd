@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    /*font-family: 'Gloria Hallelujah', cursive;
+*/
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Sedgwick Ave Display', cursive;
+}
+header{
+    
+    box-shadow: 0 6px 15px rgba(0,0,0, 0.10);
+    background-color: #34495e;
+    position: fixed;
+    width: 100%;
+}
+ /* header-parte-superior*/
+
+#container_header_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    border-bottom: solid 4px #95949F;
+}
+#header_buscar{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+input{
+    border-radius:10px;
+    border: none;
+    width: 70%;
+    height: 70%;
+    padding-left:10px;
+    background-color: #95949F;
+}
+#header_buscar{
+    width: 800px;
+   
+
+}
+
+#Logo{
+    padding: 5px;
+    display: flex;
+    height: 55px;
+    width: 55px;
+    background-color: #95949F;
+    margin: 3px;
+}
+#Contacto{
+    padding: 5px;
+    border-radius: 50%;
+    margin: 3px;
+    background-color: #95949F;
+    display: flex;
+    height: 55px;
+    width: 55px;
+}
+img{
+    object-fit: cover;
+}
+/* header-parte-inferior*/
+#container_header_bottom{
+    display: flex;
+    justify-content:center ;
+    
+}
+nav{
+   
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+    
+}
+li{
+    padding: 5px;
+    margin: 5px 50px;
+}
+nav li:hover,
+#contacto:hover {
+  
+  border-bottom: solid #95949F;
+ 
+}
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+}
+/*Sections*/
+
+section{
+  scroll-margin-top:  90px;
+  padding: 45px 90px;
+
+  /* tmp: para visualizar secciones */
+  height: 100vh;
+  border: 1px dashed #34495e;
+}
+  
+
+#banner {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    background: url("../img/banner_principal.jpg") no-repeat center center fixed;
+    background-size: cover;
+    align-items: flex-end;
+    color: white;
+    justify-content: flex-end;
+    height: 100vh;
+  }
+  #div_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #34495e;
+    opacity: 0.9;
+    padding: 3rem;
+    font-family: sans-serif;
+
+    
+
+  }
+
