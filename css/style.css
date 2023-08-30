@@ -11,9 +11,9 @@ font-family: 'Gloria Hallelujah', cursive;
 font-family: 'Sedgwick Ave Display', cursive;
 }
 header{
-    
+    z-index: 999;
     box-shadow: 0 6px 15px rgba(0,0,0, 0.10);
-    background-color: #34495e;
+    background-color:rgb(48, 73, 165);
     position: fixed;
     width: 100%;
 }
@@ -24,7 +24,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     
-    border-bottom: solid 4px #95949F;
+    border-bottom: solid 4px #f0f0f2;
 }
 #header_buscar{
 display: flex;
@@ -32,49 +32,52 @@ justify-content: center;
 align-items: center;
 }
 
-input{
+#header_buscar input{
     border-radius:10px;
     border: none;
     width: 70%;
     height: 70%;
     padding-left:10px;
-    background-color: #95949F;
+    background-color: #f0f0f2;
 }
 #header_buscar{
     width: 800px;
-   
+    
 
+}
+#header_buscar input{
+  background-color: #baf3f2;
 }
 
 #Logo{
     padding: 5px;
     display: flex;
-    height: 55px;
-    width: 55px;
-    background-color: #95949F;
+    height: 60px;
+    width: 60px;
     margin: 3px;
 }
+#logo img{
+  width: 55px;
+  height: 55px;
+}
+
 #Contacto{
     padding: 5px;
     border-radius: 50%;
     margin: 3px;
-    background-color: #95949F;
+    background-color: #baf3f2;
     display: flex;
     height: 55px;
     width: 55px;
 }
-img{
-    object-fit: cover;
-}
+
 /* header-parte-inferior*/
 #container_header_bottom{
     display: flex;
     justify-content:center ;
     
 }
-nav{
-   
-}
+
 nav ul{
     display: flex;
     list-style: none;
@@ -93,9 +96,9 @@ nav li:hover,
 }
 
 nav a{
-    color: #ffffff;
+    color: hsl(192, 100%, 58%);
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 /*Sections*/
 
@@ -113,25 +116,105 @@ section{
     padding: 100px;
     display: flex;
     flex-direction: column;
-    background: url("../img/banner_principal.jpg") no-repeat center center fixed;
+    background: url("../img/portada.jpg") no-repeat center center fixed;
     background-size: cover;
     align-items: flex-end;
     color: white;
     justify-content: flex-end;
     height: 100vh;
   }
-  #div_banner{
+  .div_banner{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: #34495e;
+    background: linear-gradient(90deg, rgb(102, 96, 222) 0%, rgb(70, 36, 171)35%, rgb(0 212 255 / 63%) 100%);
     opacity: 0.9;
     padding: 3rem;
     font-family: sans-serif;
 
-    
-
+  }
+  section > h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #34495e;
+  
+    border-bottom: 5px solid #34495e;
+    margin-bottom: 2rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    background: rgb(48, 73, 165);
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
   }
 
+  .container_footer{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 200px;
+   justify-content: center;
+   align-items: center;
+   
+  }
+  
+  .noticias{
+    width:700px;
+    height: 55px;
+  }
+  .form-suscripcion{
+   display: flex;
+   gap: 5px;
+   justify-content: center;
+   width: 700px;
+   height: 50px;
+  }
+  .name{
+    align-self: center;
+    padding: 5px;
+    height: 30px;
+    width: 400px;
+   
+  }
+ .submit_btn{
+    align-self: center;
+    padding: 5px;
+    width: 150px;
+    height: 30px;
+    background-color: hsl(195, 85%, 46%);
+    
+ }
+  #div-ir-arriba {
+    display: flex;
+    cursor: pointer;
+  
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    background: hsl(210, 29%, 29%);
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+  
+    box-shadow: 0px 12px 7px rgba(0, 0, 0, .1);
+    transition: 300ms ease;
+  }
+  
+  #div-ir-arriba:hover {
+    background: hsl(186, 63%, 59%);
+    transform: translateY(-0.5rem);
+
+  }
+  .div-ir-arriba-flecha{
+    padding: 8px;
+  }
+  
+  
+  
