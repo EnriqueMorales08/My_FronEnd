@@ -10,14 +10,15 @@ body{
 font-family: 'Gloria Hallelujah', cursive;
 font-family: 'Sedgwick Ave Display', cursive;
 }
+/* #region HEADER*/
 header{
     z-index: 999;
-    box-shadow: 0 6px 15px rgba(0,0,0, 0.10);
-    background-color:rgb(48, 73, 165);
+    box-shadow: 0 6px 15px #111;
+    background-color: #000000;
     position: fixed;
     width: 100%;
 }
- /* header-parte-superior*/
+
 
 #container_header_top{
     display: flex;
@@ -38,23 +39,25 @@ align-items: center;
     width: 70%;
     height: 70%;
     padding-left:10px;
-    background-color: #f0f0f2;
+    background-color: #333
+}
+#header_buscar input:hover {
+  background-color: #555; /* Color al pasar el mouse en el campo de búsqueda */
 }
 #header_buscar{
     width: 800px;
     
 
 }
-#header_buscar input{
-  background-color: #baf3f2;
-}
 
 #Logo{
-    padding: 5px;
-    display: flex;
-    height: 60px;
-    width: 60px;
-    margin: 3px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: #ff6347;
+  display: flex;
+  height: 55px;
+  width: 55px;
 }
 #logo img{
   width: 55px;
@@ -65,13 +68,17 @@ align-items: center;
     padding: 5px;
     border-radius: 50%;
     margin: 3px;
-    background-color: #baf3f2;
+    background-color: #ff6347;
     display: flex;
     height: 55px;
     width: 55px;
 }
+nav li:hover,
+#contacto:hover {
+    border-bottom: solid #ff0000; /* Cambio de color al pasar el mouse sobre los enlaces */
+}
 
-/* header-parte-inferior*/
+
 #container_header_bottom{
     display: flex;
     justify-content:center ;
@@ -88,61 +95,191 @@ li{
     padding: 5px;
     margin: 5px 50px;
 }
-nav li:hover,
-#contacto:hover {
-  
-  border-bottom: solid #95949F;
- 
-}
+
 
 nav a{
-    color: hsl(190, 21%, 95%);
+  color: #ff0000;
+    
     text-decoration: none;
     font-size: 1.7em;
 }
-/*Sections*/
+/* #endregion */
 
-section{
-  scroll-margin-top:  90px;
+/* #region SECCIONES*/
+
+/* SECCION BANNER*/
+section {
+  scroll-margin-top: 90px;
   padding: 45px 90px;
-
-  /* tmp: para visualizar secciones */
-  height: 100vh;
-  border: 1px dashed #34495e;
+  border: 1px dashed #ff0000; /* Cambia el color del borde si lo deseas */
 }
-  
 
 #banner {
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    background: url("../img/portada.jpg") no-repeat center center fixed;
-    background-size: cover;
-    align-items: flex-end;
-    color: white;
-    justify-content: flex-end;
-    height: 100vh;
-  }
-  .div_banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background: linear-gradient(90deg, rgb(102, 96, 222) 0%, rgb(70, 36, 171)35%, rgb(0 212 255 / 63%) 100%);
-    opacity: 0.9;
-    padding: 3rem;
-    font-family: sans-serif;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  background: url("../img/imagengamer_banner.jpg") no-repeat center center fixed;
+  background-size: cover;
+  align-items: flex-end;
+  color: white;
+  justify-content: flex-end;
+  height: 100vh;
+}
 
+.div_banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(90deg, #FF0000 0%, #000000 35%, #ff6800 100%);
+  opacity: 0.9;
+  padding: 3rem;
+  font-family: sans-serif;
+}
+section > h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ff0000; /* Cambia el color del título según tu estilo */
+  border-bottom: 5px solid #ff0000; /* Cambia el color del borde inferior si lo deseas */
+  margin-bottom: 2rem;
+}
+
+  /*SECCION RESEÑA Y COMENTARIOS*/
+  #destacados {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
   }
-  section > h1 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: #34495e;
   
-    border-bottom: 5px solid #34495e;
-    margin-bottom: 2rem;
+  .destacados-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
   }
+  
+  .destacado-info {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    background: #111;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .destacado-info img {
+    max-width: 100%;
+  }
+  
+  .star-rating {
+    color: gold;
+    font-size: 1.5rem;
+  }
+  
+  .clientes-comentarios {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .comentario {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background-color: #222;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .cliente img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .cliente-mensaje {
+    flex: 1;
+    margin-bottom: 0.75rem;
+    font-size: 14px;
+  }
+  
+  .cliente-firma {
+    font-style: italic;
+    font-weight: 600;
+  }
+  /* SECCION TOP JUEGOS ACTUALIDAD*/
+  #top_juegos {
+    background-color: #000;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#juegos-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#juegos-lista li{
+  background-color: #111;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.juego-imagen {
+    align-self: center;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+   
+}
+
+.juego-info {
+    color: rgb(254, 254, 254);
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.juego-titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.div_botton{
+
+}
+
+.juego-descripcion {
+  font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #FF0000;
+    border-radius: 15px;
+    font-size: 0.9em;
+    color: #fdf7f7;
+}
+
+ /* #endregion */
+/* #region FOOTER */
   footer {
     display: flex;
     flex-direction: column;
@@ -153,15 +290,22 @@ section{
   }
 
   .container_footer{
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   height: 200px;
-   justify-content: center;
-   align-items: center;
    
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
   }
-  
+  .container_footer h1{
+      font-size: 50px;
+      font-weight: bolder;
+      color: aquamarine;
+      font-family: cursive;
+      -webkit-text-stroke: 2px black;
+  }
+ 
   .noticias{
     width:700px;
     height: 55px;
@@ -172,22 +316,32 @@ section{
    justify-content: center;
    width: 700px;
    height: 50px;
+  
   }
   .name{
     align-self: center;
     padding: 5px;
     height: 30px;
     width: 400px;
-   
   }
  .submit_btn{
     align-self: center;
     padding: 5px;
     width: 150px;
     height: 30px;
-    background-color: hsl(195, 85%, 46%);
+    font-weight: 750;
+    background-color: hsl(186, 63%, 59%);
     
  }
+ .footer-text{
+     font-size: 1.4em;
+      font-weight: bolder;
+      color: aquamarine;
+      font-family: cursive;
+      -webkit-text-stroke: 2px black;
+ }
+ /* #endregion*/
+ 
   #div-ir-arriba {
     display: flex;
     cursor: pointer;
