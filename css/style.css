@@ -5,8 +5,6 @@
     border: 0;
 }
 body{
-    /*font-family: 'Gloria Hallelujah', cursive;
-*/
 font-family: 'Gloria Hallelujah', cursive;
 font-family: 'Sedgwick Ave Display', cursive;
 }
@@ -42,12 +40,10 @@ align-items: center;
     background-color: #333
 }
 #header_buscar input:hover {
-  background-color: #555; /* Color al pasar el mouse en el campo de búsqueda */
+  background-color: #555; 
 }
 #header_buscar{
     width: 800px;
-    
-
 }
 
 #Logo{
@@ -73,9 +69,8 @@ align-items: center;
     height: 55px;
     width: 55px;
 }
-nav li:hover,
-#contacto:hover {
-    border-bottom: solid #ff0000; /* Cambio de color al pasar el mouse sobre los enlaces */
+nav li:hover{
+    border-bottom: solid #ff0000; 
 }
 
 
@@ -98,20 +93,20 @@ li{
 
 
 nav a{
-  color: #ff0000;
-    
+    color: #ff0000;
+    -webkit-text-stroke: 2px rgb(255, 60, 0);
     text-decoration: none;
     font-size: 1.7em;
 }
 /* #endregion */
 
-/* #region SECCIONES*/
+/* #region SECCIONEs*/
 
 /* SECCION BANNER*/
 section {
   scroll-margin-top: 90px;
   padding: 45px 90px;
-  border: 1px dashed #ff0000; /* Cambia el color del borde si lo deseas */
+  border: 1px dashed #ff0000; 
 }
 
 #banner {
@@ -141,8 +136,8 @@ section > h1 {
   display: inline-block;
   text-transform: uppercase;
   font-size: 2rem;
-  color: #ff0000; /* Cambia el color del título según tu estilo */
-  border-bottom: 5px solid #ff0000; /* Cambia el color del borde inferior si lo deseas */
+  color: #ff0000; 
+  border-bottom: 5px solid #ff0000; 
   margin-bottom: 2rem;
 }
 
@@ -219,7 +214,7 @@ section > h1 {
   }
   /* SECCION TOP JUEGOS ACTUALIDAD*/
   #top_juegos {
-    background-color: #000;
+    background-color: #141111;
     padding: 80px 0;
     display: flex;
     flex-direction: column;
@@ -235,7 +230,7 @@ section > h1 {
     gap: 20px;
 }
 #juegos-lista li{
-  background-color: #111;
+  background-color: #333;
   width: 180px;
   display: flex;
   flex-direction: column;
@@ -263,9 +258,6 @@ section > h1 {
     font-weight: bold;
     margin-top: 10px;
 }
-.div_botton{
-
-}
 
 .juego-descripcion {
   font-family: Arial, Helvetica, sans-serif;
@@ -277,70 +269,146 @@ section > h1 {
     font-size: 0.9em;
     color: #fdf7f7;
 }
+ /* SECCION PROXIMOS EVENTOS */
+#Eventos_Proximos {
+  background-color: #141111; 
+  color: #fff;
+  padding: 40px; 
+}
 
- /* #endregion */
+#Eventos_Proximos h2 {
+  font-size: 24px; 
+  margin-bottom: 20px; 
+}
+
+.div_container_eventos{
+  display: flex ;
+  gap: 10px;
+  justify-content: space-around;
+}
+.evento {
+  display: flex;
+  gap: 10px;
+  background-color: #2b2b2b; 
+  color: #fff; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  border-radius: 8px; 
+}
+.evento .evento_descripcion{
+  width:350px ;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.div_img img{
+  width: 200px;
+  height: 200px;
+}
+.evento h3 {
+  color: #0d00ff;
+ 
+  font-size: 20px;/
+  margin-bottom: 10px;
+}
+.evento p{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.evento a {
+  color: #ff9800; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+.evento a:hover {
+  text-decoration: underline; 
+}
+
+/* #endregion */
 /* #region FOOTER */
   footer {
+    height: 350px;
     display: flex;
-    flex-direction: column;
-    background: rgb(48, 73, 165);
-    height: 40vh;
+    background: #000;
     align-items: center;
     justify-content: center;
+    border: 1px dashed #ff0000  ;
   }
 
   .container_footer{
    
       display: flex;
       flex-direction: column;
+      gap: 10px;
       width: 100%;
-      height: 200px;
       justify-content: center;
       align-items: center;
   }
   .container_footer h1{
       font-size: 50px;
       font-weight: bolder;
-      color: aquamarine;
+      color: rgb(255, 213, 0);
       font-family: cursive;
-      -webkit-text-stroke: 2px black;
+      -webkit-text-stroke: 2px rgb(255, 0, 0);
   }
  
-  .noticias{
-    width:700px;
-    height: 55px;
-  }
-  .form-suscripcion{
+  #contacto-form{
+   color:whitesmoke ;
    display: flex;
-   gap: 5px;
+   flex-direction: column;
+   gap: 10px;
    justify-content: center;
-   width: 700px;
-   height: 50px;
-  
+   width: 400px;
   }
-  .name{
-    align-self: center;
-    padding: 5px;
-    height: 30px;
-    width: 400px;
+
+  #contacto-form input{
+   padding: 5px; 
+   height: 30px;
+   background-color: #2a2727;
+   color: #ffffff;
+   border-bottom: 3px solid #ff1100;
   }
- .submit_btn{
-    align-self: center;
+  #contacto-form textarea{
     padding: 5px;
-    width: 150px;
+    height: 55px;
+    background-color: #2a2727;
+    color: #ffffff;
+    border-bottom: 3px solid #ff1100
+  }
+  #contacto-form .btn{
+    background-color: #FF0000;
+    background-image: -webkit-linear-gradient(top, #eb0202, #ed7905);
     height: 30px;
-    font-weight: 750;
-    background-color: hsl(186, 63%, 59%);
+    border-radius: 20px;
+  }
+  #contacto-form input:hover{
+    border-bottom: 3px solid #ff8400
+  }
+  #contacto-form textarea:hover{
+    border-bottom: 3px solid #ff8400
     
- }
+  }
+  #contacto-form .btn:hover{
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(top, #eb0202, #ff0800);
+  }
+  #contacto-form input::placeholder{
+    color: #bebed5;
+  }
+  #contacto-form textarea::placeholder{
+    color: #bebed5;
+  }
+
  .footer-text{
-     font-size: 1.4em;
+      
+      font-size: 1.2em;
       font-weight: bolder;
-      color: aquamarine;
+      color: rgb(255, 98, 0);
       font-family: cursive;
-      -webkit-text-stroke: 2px black;
+      -webkit-text-stroke: 2px rgb(255, 0, 0);
  }
- /* #endregion*/
+  /*#endregion*/
  
   #div-ir-arriba {
     display: flex;
@@ -350,7 +418,7 @@ section > h1 {
     bottom: 20px;
     right: 20px;
   
-    background: hsl(210, 29%, 29%);
+    background:hsl(210deg 56.44% 38.35%);
     color: white;
     height: 50px;
     width: 50px;
@@ -362,7 +430,7 @@ section > h1 {
   }
   
   #div-ir-arriba:hover {
-    background: hsl(186, 63%, 59%);
+    background: hsl(244, 100%, 50%);
     transform: translateY(-0.5rem);
 
   }
