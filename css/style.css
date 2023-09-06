@@ -1,3 +1,20 @@
+:root {
+  --color-negro: #000000;
+  --color-gris-claro: #f0f0f2;
+  --color-rojo: #ff6347;
+  --color-gris-oscuro: #555;
+  --color-rojo-oscuro: #ff0000;
+  --color-negro-fondo: #111;
+  --color-naranja: #ff6800;
+  --color-blanco: #fff;
+  --color-negro-fondo-oscuro: #141111;
+  --color-azul: #0d00ff;
+  --color-naranja-enlace: #ff9800;
+  --color-blanco-descripcion: #fdf7f7;
+  --color-negro-fondo-eventos: #2b2b2b;
+  --color-gris-claro-placeholder: #bebed5;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -11,8 +28,8 @@ font-family: 'Sedgwick Ave Display', cursive;
 /* #region HEADER*/
 header{
     z-index: 999;
-    box-shadow: 0 6px 15px #111;
-    background-color: #000000;
+    box-shadow: 0 6px 15px var(--color-negro-fondo);
+    background-color: var(--color-negro-fondo);
     position: fixed;
     width: 100%;
 }
@@ -23,7 +40,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     
-    border-bottom: solid 4px #f0f0f2;
+    border-bottom: solid 4px var(--color-gris-claro);
 }
 #header_buscar{
 display: flex;
@@ -40,7 +57,7 @@ align-items: center;
     background-color: #333
 }
 #header_buscar input:hover {
-  background-color: #555; 
+  background-color: var(--color-gris-oscuro); 
 }
 #header_buscar{
     width: 800px;
@@ -50,7 +67,7 @@ align-items: center;
   padding: 5px;
   border-radius: 50%;
   margin: 3px;
-  background-color: #ff6347;
+  background-color: var(--color-rojo);
   display: flex;
   height: 55px;
   width: 55px;
@@ -64,13 +81,13 @@ align-items: center;
     padding: 5px;
     border-radius: 50%;
     margin: 3px;
-    background-color: #ff6347;
+    background-color: var(--color-rojo);
     display: flex;
     height: 55px;
     width: 55px;
 }
 nav li:hover{
-    border-bottom: solid #ff0000; 
+    border-bottom: solid var(--color-rojo-oscuro); 
 }
 
 
@@ -93,7 +110,7 @@ li{
 
 
 nav a{
-    color: #ff0000;
+    color: var(--color-rojo-oscuro);
     -webkit-text-stroke: 2px rgb(255, 60, 0);
     text-decoration: none;
     font-size: 1.7em;
@@ -106,7 +123,7 @@ nav a{
 section {
   scroll-margin-top: 90px;
   padding: 45px 90px;
-  border: 1px dashed #ff0000; 
+  border: 1px dashed var(--color-rojo-oscuro); 
 }
 
 #banner {
@@ -127,7 +144,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(90deg, #FF0000 0%, #000000 35%, #ff6800 100%);
+  background: linear-gradient(90deg, var(--color-rojo-oscuro) 0%, var(--color-negro-fondo) 35%, var(--color-naranja) 100%);
   opacity: 0.9;
   padding: 3rem;
   font-family: sans-serif;
@@ -136,8 +153,8 @@ section > h1 {
   display: inline-block;
   text-transform: uppercase;
   font-size: 2rem;
-  color: #ff0000; 
-  border-bottom: 5px solid #ff0000; 
+  color: var(--color-rojo-oscuro); 
+  border-bottom: 5px solid var(--color-rojo-oscuro); 
   margin-bottom: 2rem;
 }
 
@@ -145,7 +162,7 @@ section > h1 {
   #destacados {
     text-align: center;
     background-color: #000;
-    color: #fff;
+    color: var(--color-blanco);
     padding: 40px 0;
     font-family: 'Arial', sans-serif;
   }
@@ -164,10 +181,10 @@ section > h1 {
     flex: 1;
     text-align: center;
     padding: 2rem;
-    background: #111;
+    background: var(--color-negro-fondo);
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    color: #fff;
+    color: var(--color-blanco);
     font-size: 16px;
   }
   
@@ -193,7 +210,7 @@ section > h1 {
     padding: 15px;
     background-color: #222;
     border-radius: 8px;
-    color: #fff;
+    color: var(--color-blanco);
   }
   
   .cliente img {
@@ -214,7 +231,7 @@ section > h1 {
   }
   /* SECCION TOP JUEGOS ACTUALIDAD*/
   #top_juegos {
-    background-color: #141111;
+    background-color: var(--color-negro-fondo-oscuro);
     padding: 80px 0;
     display: flex;
     flex-direction: column;
@@ -264,15 +281,15 @@ section > h1 {
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: #FF0000;
+    background-color: var(--color-rojo-oscuro);
     border-radius: 15px;
     font-size: 0.9em;
-    color: #fdf7f7;
+    color: var(--color-blanco-descripcion);
 }
  /* SECCION PROXIMOS EVENTOS */
 #Eventos_Proximos {
-  background-color: #141111; 
-  color: #fff;
+  background-color: var(--color-negro-fondo-oscuro); 
+  color: var(--color-blanco);
   padding: 40px; 
 }
 
@@ -289,8 +306,8 @@ section > h1 {
 .evento {
   display: flex;
   gap: 10px;
-  background-color: #2b2b2b; 
-  color: #fff; 
+  background-color: var(--color-negro-fondo-eventos); 
+  color: var(--color-blanco); 
   padding: 20px; 
   margin-bottom: 20px; 
   border-radius: 8px; 
@@ -306,7 +323,7 @@ section > h1 {
   height: 200px;
 }
 .evento h3 {
-  color: #0d00ff;
+  color: var(--color-azul);
  
   font-size: 20px;/
   margin-bottom: 10px;
@@ -316,7 +333,7 @@ section > h1 {
 }
 
 .evento a {
-  color: #ff9800; 
+  color: var(--color-naranja-enlace); 
   text-decoration: none; 
   font-weight: bold; 
 }
@@ -333,7 +350,7 @@ section > h1 {
     background: #000;
     align-items: center;
     justify-content: center;
-    border: 1px dashed #ff0000  ;
+    border: 1px dashed var(--color-rojo-oscuro)  ;
   }
 
   .container_footer{
@@ -366,18 +383,18 @@ section > h1 {
    padding: 5px; 
    height: 30px;
    background-color: #2a2727;
-   color: #ffffff;
+   color: var(--color-blanco)fff;
    border-bottom: 3px solid #ff1100;
   }
   #contacto-form textarea{
     padding: 5px;
     height: 55px;
     background-color: #2a2727;
-    color: #ffffff;
+    color: var(--color-blanco)fff;
     border-bottom: 3px solid #ff1100
   }
   #contacto-form .btn{
-    background-color: #FF0000;
+    background-color: var(--color-rojo-oscuro);
     background-image: -webkit-linear-gradient(top, #eb0202, #ed7905);
     height: 30px;
     border-radius: 20px;
@@ -394,10 +411,10 @@ section > h1 {
     background-image: -webkit-linear-gradient(top, #eb0202, #ff0800);
   }
   #contacto-form input::placeholder{
-    color: #bebed5;
+    color: var(--color-gris-claro-placeholder);
   }
   #contacto-form textarea::placeholder{
-    color: #bebed5;
+    color: var(--color-gris-claro-placeholder);
   }
 
  .footer-text{
@@ -409,7 +426,7 @@ section > h1 {
       -webkit-text-stroke: 2px rgb(255, 0, 0);
  }
   /*#endregion*/
- 
+ /* #region FLECHA_IR_ARRIBA*/
   #div-ir-arriba {
     display: flex;
     cursor: pointer;
@@ -437,6 +454,7 @@ section > h1 {
   .div-ir-arriba-flecha{
     padding: 8px;
   }
+  /*#endregion*/
   
   
   
