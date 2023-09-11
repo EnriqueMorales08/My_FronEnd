@@ -61,4 +61,7 @@ contactoForm.addEventListener("submit", (event) => {
 
   contactoForm.reset();
 });
-  
+
+toggle.onclick=()=>{
+  items.classList.toggle("open")
+}

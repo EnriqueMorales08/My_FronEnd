@@ -17,32 +17,37 @@
 </head>
 <body>
     
-        <header>
-            <div id="container_header_top">
+    <header>
+        <div id="container_header_top">
+            <!-- Botón de hamburguesa -->
+            <div class="menu-toggle" id="toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <a id="Logo" href="#">
+                <img src="./img/mando_negro.png" title="Logo">
+            </a>
             
-                <a id="Logo">
-                  <image src="./img/mando_negro.png" title="Logo">
-                </a>
-                <form id="header_buscar">
-                    <input type="text" name="search" placeholder="¿Qué buscas hoy?">
-                </form>
+            <form id="header_buscar">
+                <input type="text" name="search" placeholder="¿Qué buscas hoy?">
+            </form>
 
-                <a id="Contacto">
-                    <image src="./img/contacto.png" title="Contacto">
-                </a>
-            </div>
+            <a id="Contacto" href="#">
+                <img src="./img/contacto.png" title="Contacto">
+            </a>
+        </div>
 
-            <div id="container_header_bottom">
-                <nav >
-                    <ul>
-                        <li><a href="#destacados">Juego de la semana</a></li>
-                        <li><a href="#top_juegos">Mejores videojuegos</a></li>
-                        <li><a href="#Eventos_Proximos">Proximos eventos y torneos</a></li>
-                                      
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <!-- Menú de navegación vertical -->
+        <nav id="navbar" >
+            <ul id="items">
+                <li><a href="#destacados">Juego de la semana</a></li>
+                <li><a href="#top_juegos">Mejores videojuegos</a></li>
+                <li><a href="#Eventos_Proximos">Proximos eventos y torneos</a></li>
+            </ul>
+        </nav>
+    </header>
      <main>   
         <!--SECCION BANNER -->
             <section id="banner">
@@ -50,6 +55,8 @@
                     <h1>¡Sumérgete en el mundo de la diversión digital!</h1>
                         <p> Explora nuestro catálogo de sueños pixelados y desata la emoción con los mejores videojuegos en un solo lugar.
                         ¡Bienvenido a tu nueva aventura virtual!</p>
+                        <img src="./img/mando_negro.png" class="img-animada2">
+                        <img src="./img/mando1.png" class="img-animada">
                 </div>
             </section>
                 <!--SECCION 1 -->
@@ -127,7 +134,7 @@
             <section id="Eventos_Proximos">
                 <h2>Próximos Eventos y Torneos</h2>
                 <div class="div_container_eventos">
-                    <div>    
+                    
                             <div class="evento">
                                 <div class="evento_descripcion">
                                     <h3>Evento 1</h3>
@@ -157,12 +164,12 @@
                                     <img src="./img/eventos/evento2.jpg" alt="Evento1">
                                 </div>
                           </div> 
-                 </div>  
+                  
 
-                  <div>
+                 
                             <div class="evento">
                                 <div class="evento_descripcion">
-                                    <h3>Evento 2</h3>
+                                    <h3>Evento 3</h3>
                                     <p>Fecha: 30 de Septiembre de 2023</p>
                                     <p>Hora: 14:00 - 17:00</p>
                                     <p>Lugar: Miami_Estados Unidos</p>
@@ -177,7 +184,7 @@
 
                             <div class="evento">
                                 <div class="evento_descripcion">
-                                    <h3>Evento 2</h3>
+                                    <h3>Evento 4</h3>
                                     <p>Fecha: 5 de octubre de 2023</p>
                                     <p>Hora: 14:00 - 17:00</p>
                                     <p>Lugar: Berlin-Alemania</p>
@@ -189,7 +196,7 @@
                                     <img src="./img/eventos/evento4.jpg" alt="Evento1">
                                 </div>
                         </div>
-                  </div>
+                  
              </div>
                 
                
