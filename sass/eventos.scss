@@ -1,0 +1,59 @@
+#Eventos_Proximos {
+    background-color: $color-negro-fondo-oscuro; 
+    color: $color-blanco;
+    padding: 40px; 
+  }
+  
+  #Eventos_Proximos h2 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+  }
+  
+  .div_container_eventos{
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  .evento {
+    display: flex;
+    gap: 10px;
+    background-color: $color-negro-fondo-eventos; 
+    color: $color-blanco; 
+    padding: 20px; 
+    border-radius: 8px; 
+    filter: drop-shadow(2px 4px 6px rgb(0, 8, 255) );
+  }
+  .evento .evento_descripcion{
+    width:350px ;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .div_img{
+    display: flex;
+    
+  }
+  .div_img img{
+    width: 200px;
+    height: 200px;
+  }
+  .evento h3 {
+    color: $color-azul;
+    font-size: 20px;
+    margin-bottom:10px;
+  }
+  .evento p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  .evento a {
+    color: $color-naranja-enlace; 
+    text-decoration: none; 
+    font-weight: bold; 
+  }
+  
+  .evento a:hover {
+    text-decoration: underline; 
+  }
+  

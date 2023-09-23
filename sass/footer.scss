@@ -1,0 +1,82 @@
+footer {
+    
+    display: flex;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed $color-rojo-oscuro  ;
+  }
+
+  .container_footer{
+   
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+  }
+  .container_footer h1{
+      font-size: 50px;
+      font-weight: bolder;
+      color: rgb(255, 213, 0);
+      font-family: cursive;
+      -webkit-text-stroke: 2px rgb(255, 0, 0);
+  }
+ 
+  #contacto-form{
+   color:whitesmoke ;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   width: 400px;
+  }
+
+  #contacto-form input{
+   padding: 5px; 
+   height: 30px;
+   background-color: #2a2727;
+   color: $color-blanco;
+   border-bottom: 3px solid #ff1100;
+  }
+  #contacto-form textarea{
+    padding: 5px;
+    height: 55px;
+    background-color: #2a2727;
+    color: $color-blanco;
+    border-bottom: 3px solid #ff1100
+  }
+  #contacto-form .btn{
+    background-color: $color-rojo-oscuro;
+    background-image: -webkit-linear-gradient(top, #eb0202, #ed7905);
+    height: 30px;
+    border-radius: 20px;
+  }
+  #contacto-form input:hover{
+    border-bottom: 3px solid #ff8400
+  }
+  #contacto-form textarea:hover{
+    border-bottom: 3px solid #ff8400
+    
+  }
+  #contacto-form .btn:hover{
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(top, #eb0202, #ff0800);
+  }
+  #contacto-form input::placeholder{
+    color: $color-gris-claro-placeholder;
+  }
+  #contacto-form textarea::placeholder{
+    color: $color-gris-claro-placeholder;
+  }
+
+ .footer-text{
+      
+      font-size: 1.2em;
+      font-weight: bolder;
+      color: rgb(255, 98, 0);
+      font-family: cursive;
+      -webkit-text-stroke: 2px rgb(255, 0, 0);
+ }

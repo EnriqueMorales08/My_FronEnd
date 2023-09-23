@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+  font-size: 16px;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Sedgwick Ave Display', cursive;
+}
+section {
+    scroll-margin-top: 90px;
+    padding: 45px 90px;
+    border: 1px dashed $color-rojo-oscuro; 
+  }

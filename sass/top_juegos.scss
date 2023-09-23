@@ -1,0 +1,59 @@
+#top_juegos {
+    background-color: $color-negro-fondo-oscuro;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#juegos-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#juegos-lista li{
+  background-color: #333;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0 50px;
+  padding: 10px;
+  filter: drop-shadow(2px 4px 6px red );
+}
+
+.juego-imagen {
+    align-self: center;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+   
+}
+
+.juego-info {
+    color: rgb(254, 254, 254);
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.juego-titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.juego-descripcion {
+  font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: $color-rojo-oscuro;
+    border-radius: 15px;
+    font-size: 0.9em;
+    color: $color-blanco-descripcion;
+}
